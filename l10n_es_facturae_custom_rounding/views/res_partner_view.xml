@@ -13,8 +13,12 @@
 
             <!-- Re-add it inside the Facturación / Contabilidad tab with a group label -->
             <xpath expr="//page[@name='accounting']" position="inside">
-                <group string="Rounding Method">
-                    <field name="tax_calculation_rounding_method" string="Rounding Method"/>
+                <group string="Rounding Settings">
+                    <field
+                        name="tax_calculation_rounding_method"
+                        string="Calculation Method"
+                        help="This overrides the default Odoo 18 rounding method for invoices generated for this contact."
+                    />
                 </group>
             </xpath>
 

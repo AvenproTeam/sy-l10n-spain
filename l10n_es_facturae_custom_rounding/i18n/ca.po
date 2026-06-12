@@ -1,0 +1,21 @@
+# Translation of Odoo Server.
+# Copyright 2024 Manuel Regidor <manuel.regidor@sygel.es>
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Rounding Settings"
+msgstr "Configuració d'Arrodoniment"
+
+msgid "Calculation Method"
+msgstr "Mètode de Càlcul"
+
+msgid "This overrides the default Odoo 18 rounding method for invoices generated for this contact."
+msgstr "Això sobreescriu el mètode d'arrodoniment predeterminat d'Odoo 18 per a les factures generades per a aquest contacte."
