@@ -12,4 +12,7 @@
     "application": False,
     "installable": True,
     "depends": ["l10n_es_facturae", "account_invoice_custom_rounding"],
+    "data": [
+        "views/res_partner_view.xml",
+    ],
 }

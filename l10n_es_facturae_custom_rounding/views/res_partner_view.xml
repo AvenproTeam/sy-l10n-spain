@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Manuel Regidor <manuel.regidor@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="view_partner_form_facturae_custom_rounding" model="ir.ui.view">
+        <field name="name">res.partner.form.facturae.custom.rounding</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="account_invoice_custom_rounding.acount_invoice_custom_rounding_view_partner_form"/>
+        <field name="arch" type="xml">
+
+            <!-- Remove the field from its current location (Information tab) -->
+            <xpath expr="//field[@name='tax_calculation_rounding_method']" position="replace"/>
+
+            <!-- Re-add it inside the Facturación / Contabilidad tab with a group label -->
+            <xpath expr="//page[@name='accounting']" position="inside">
+                <group string="Rounding Method">
+                    <field name="tax_calculation_rounding_method" string="Rounding Method"/>
+                </group>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>
